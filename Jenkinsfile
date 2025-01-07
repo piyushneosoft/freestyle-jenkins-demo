@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/piyushneosoft/freestyle-jenkins-demo.git'
+                git branch: 'main', url: 'https://github.com/piyushneosoft/freestyle-jenkins-demo.git'
             }
         }
         stage('Deploy') {
